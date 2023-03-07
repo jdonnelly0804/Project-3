@@ -14,3 +14,17 @@ In order to use the code from these notebooks you would need to download the pro
 
 ---
 ## Results and Summary:
+![history](Images/History.PNG)
+>
+Above you can see all the trades that were made throughout the few months that I was working on the trading bot. Many of these trades were taken for different reasons - some for CPI some for rate hikes, and some for nonfarm payroll data. Overall I ended up losing money, but this was because I needed to test to make sure the code was working. I would intentionally make the trade parameters very tight to what the expected economic data was going to be - meaning I was taking on more risk because the bot would trade regardless of how close the data came in to expectations.
+>
+![twitter_time](Images/twitter%20timing.PNG)
+>
+Here you can see a timed trade using the twitter bot. From gathering the tweet from online to making the trade - it took about .13 seconds.
+>
+![websocket](Images/websocket_fomc_time.PNG)
+>
+Here is the websocket timing for the same trade. .129 seconds - slighly faster. But also faster than you think because it actually came in much quicker with the data. The physical execution of the trade itself took about the same time, but the trade was done a second or two earlier by the websocket.
+>
+Finally, here is the best trade from all of them- which was a trade for nonfarm payroll data where I took a short position on the SPX:
+![trade](Images/NFP%20PNL.PNG)
